@@ -9,6 +9,8 @@
 
 - 👯 Colaboradores: [Andrea Balandran](https://github.com/andreabafa)
 
+- 🌍 Colaboradores: [Maria Garcia]
+
 <h3 align="left"> ¿Que es github?</h3>
 - Github es una plataforma creada para que los desarrolladores suban el codigo
 - de sus aplicaciones y herramientas y como usuario puedas colaborar con ellas.
