@@ -1,0 +1,6 @@
+-i.	Guardando un grafo en la computadora. Matriz de adyacencia y Lista de adyacencia.
+-ii.	Recorridos de un grafo.  Algoritmo primero en profundidad y algoritmo primero en anchura.
+-iii.	Algoritmo para calcular todas las componentes conexas de un grafo.
+-iv.	Algoritmo que encuentra el camino más corto, entre dos vértices de un grafo.
+-v.	saber si un grafo almacenado en la computadora es un árbol o no
+-vi.	Árbol de expansión. Algoritmos para encontrar el árbol de expansión mínima o máxima,
