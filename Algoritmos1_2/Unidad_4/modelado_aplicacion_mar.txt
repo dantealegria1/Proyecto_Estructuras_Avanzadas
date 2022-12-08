@@ -1,0 +1,105 @@
+P A R E O 
+------------------------------------------------------------------------
+Podemos tomar de ejemplo 4 personas con 4 opciones a elegir,
+pero cada persona solo puede tomar una opción y dos personas
+no pueden tomar la misma opción.
+ALGUNOS EJEMPLOS
+
+-Un posible caso puede ser de personas eligiendo su ficha a la 
+hora de jugar Monopoli, cada persona debe elegir su ficha, dos 
+personas no pueden elegir una sola ficha. Debe ser una ficha por
+persona.(BIPARTIDO)
+-En un grupo de trabajo se pretende armar parejas. Se quieren hacer uniones
+que se conozcan, que no quede nadie solo y que unicamente sean dos personas, 
+que no hayan grupos de tres.(EMPAREJAMIENTO)
+-Tenemos 4 taxis y 4 clientes, cada taxi debe ir por un cliente, sin que 
+ningun cliente se quede sin transporte y que ningun cliente tenga más de un taxi.
+(BIPARTIDO)
+______________________________________________________________________________
+EMPAREJAMIENTOS
+
+https://www.youtube.com/watch?v=Ogik23Dn1QA
+El ejemplo que nos dan acá es de parejas a la hora de hacer un trabajo.
+Acá es claro que una persona sólo se puede emparejar con una sola.
+
+Se entiende que, se deben hacer parejas para que nadie quede solo (que se 
+cause un bucle) y que cada persona pueda estar con alguién que conoce(si haya 
+un vertice que los una),no puede juntarse con más de una persona( que dos aristas
+incidan en un solo vertice).
+______________________________________________________________________________
+EMPAREJAMIENTOS MÁXIMOS
+
+https://www.youtube.com/watch?v=dINaAw-m2wQ
+El ejemplo que se nos da es como el del Monopoli. Una ficha por persona y una 
+persona
+
+Tenemos dos tipos de caminos: 
+El primero son los caminos M-alternados los cuales indican que si una 
+arista es adyacente a otra, y la siguiente  arista no lo está (una si, 
+la siguiente).
+El segundo son los caminos M-inrementables, al ingual que el primero, indica que
+si una arista es adyacente a otra, la siguiente no lo estará, pero en este  
+las aristas inicial y final del camino no se saturan.
+
+Un emparejamiento es maximo si y solo si no existe ningun M-incrementable.
+En caso de ser M-incementable, se alternan las adyacencias, las que 
+estaban unidas ahora no lo están y las que no lo estaban, ahora lo estan.
+
+https://www.youtube.com/watch?app=desktop&v=KXX1qI5DbCE
+Para resolver, se pretende que se hagan constantes intercambios
+para verificar que no se unan dos aristas en un solo vertice y que
+todos los vertices se unan con otro, o sea, que no se queden sin 
+union, solos
+La manera que nos dá el video para resolver algun problema es con 
+un grafo el cual marcaremoscon un color solido el camino que seguiremos 
+y con un camino punteado el camino secundario. Se intercambian cada vez 
+para marcar cada posible camino existente.
+
+______________________________________________________________________________
+GRAFOS BIPARTIDOS
+
+https://www.youtube.com/watch?app=desktop&v=e9uLdF5y3eA&t=290s
+Si tenemos un grafo no dirigido. Se dice que un grafo bipartido si su 
+conjunto de vertices V se puede dividir en dos subconjuntos X y Y tales que:
+-Cualquier vértice está en X o bien en Y
+-Que no hay ningun elemento que esté en simultaneamente en X y en Y
+-Todas las aristas tiene un extremo en X y otro en Y
+
+Podiamos tomarlo como un arbol. Debemos tomar en cuenta que al ser 
+dos conjuntos, X y Y, estos pueden estar unidos con el otro pero no 
+entre nodos o elementos de un mismo conjunto; o sea, que pueden estar 
+unidos entre X y Y pero no entre Y y Y o X y X.
+
+Si el grado de todos los vertices es k, para un cierto numero k natural, entonces
+existe un emparejamiento perfecto.
+______________________________________________________________________________
+MATRIMONIO ESTABLE 
+
+https://youtu.be/Vbbwq5lEbys
+Se pretende hacer parejas que cumplan con las preferencias de cada persona, 
+esto para hacer parejas estables. 
+A los chicos los marcaremos con A y a las chicas con B.
+Dados n A y n B con las preferencias con respecto a los miembros del otro sexo.
+¿Se podrán hacer parejas estables?
+Las parejas que hagamos serán estables si no hay dos parejas que se puedan 
+disolver para formar una nueva en la que sus miembros prefieran a sus nuevas 
+parejas con respecto a las actuales.
+A le hará propuestas a B hasta que sea aceptado, B se quedará con la opción que 
+mejor le parezca, que más cumpla con lo que pide.
+
+______________________________________________________________________________
+ALGORITMOS
+
+-Si un grafo es no ponderado y bipartido, se puede resolver con el Algoritmo 
+ húngaro
+-Si un grafo es no ponderado, ya sea bipartido o no, se resuelve con el 
+ Algoritmo de Edmonds
+-Si el grafo es ponderado y bipartido, usaremos el Algoritmo de Kuhn-Munkres
+-Si el grafo es ponderado, ya sea bipartido o no, se resuelve con Algoritmo de 
+ Edmonds(II)
+
+Para que sea maximo, se prioriza obtener el numero maximo de aristas sobre el peso
+
+
+
+
