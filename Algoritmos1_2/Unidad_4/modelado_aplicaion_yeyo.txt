@@ -1,0 +1,3 @@
+Para las aplicaciones de grafos dirigidos, son aun mas las aplicaciones que podemos encontrar como por ejemplo el encaminamiento de redes. 
+Básicamente, se trata de routers que en el grafo serían nuestros nodos, los cuales tomas decisiones en base a cierta información, siguen la siguiente jerarquía de priorización
+Escalabilidad − Autonomía administración de la red − Sistemas Autónomos
